@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical"
+              android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginTextId"
+        android:gravity="center"
+        android:textColor="@color/westeros_red"
+        android:text="Have an account ?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.liferay.mobile.screens.viewsets.westeros.auth.signup.SignUpScreenlet
+        android:id="@+id/signup_screenlet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:anonymousApiPassword="Password"
+        app:anonymousApiUserName="Username"
+        app:layoutId="@layout/sign_up_default"
+        android:gravity="center"/>
+
+</LinearLayout>

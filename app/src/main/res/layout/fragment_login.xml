@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome !!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:textColor="@color/westeros_red"
+        android:layout_marginTop="30dp"/>
+
+    <!--
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main"
+        android:layout_marginTop="5dp"/>
+    -->
+    <com.liferay.mobile.screens.auth.login.LoginScreenlet
+        android:id="@+id/loginScreenletId"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        app:layoutId="@layout/login_default"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupTextId"
+        android:gravity="center"
+        android:textColor="@color/westeros_red"
+        android:text="Signup Now"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp"
+        android:layout_margin="30dp"/>
+
+</LinearLayout>

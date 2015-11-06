@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.edocent.jhatpatbus.BusDetailsFragment"
+              android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bus_detail_welcome"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/westeros_red"/>
+
+    <TextView
+        android:id="@+id/busNameTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/westeros_red"/>
+
+    <TextView
+        android:id="@+id/busDateTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/westeros_red"/>
+
+    <TextView
+        android:id="@+id/busTimeTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/westeros_red"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookBusId"
+        android:text="BOOK"
+        android:textColor="#FFFFFF"
+        android:background="@color/westeros_red"
+        />
+
+</LinearLayout>
